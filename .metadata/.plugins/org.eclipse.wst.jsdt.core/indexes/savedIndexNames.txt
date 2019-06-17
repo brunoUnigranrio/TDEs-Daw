@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/home/brunosxs/git/DAW/TDEs/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1613931836.index
+1677053558.index
+1788823899.index
+3306220578.index
+4263970272.index
+3555182789.index
+269842779.index
