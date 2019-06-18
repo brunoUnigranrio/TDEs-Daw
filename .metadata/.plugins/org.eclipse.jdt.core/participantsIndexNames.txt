@@ -1,3 +1,5 @@
 INDEX VERSION 1.131
+/home/brunosxs/git/DAW/TDEs/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/397178828.index
+/TDE2/src
 /home/brunosxs/git/DAW/TDEs/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1613931836.index
 /TDE1/src
