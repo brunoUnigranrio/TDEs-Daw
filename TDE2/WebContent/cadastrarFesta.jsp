@@ -110,9 +110,6 @@ form.addEventListener('submit', (e) => {
 		, false);
 console.log("Added eventlistener");
 //form.submit = validate;
-function validate(e) {
-	
-}
 
 </script>
 </body>
