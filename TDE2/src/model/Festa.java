@@ -52,6 +52,12 @@ public class Festa {
 	public void setFim(String fim) {
 		this.fim = fim;
 	}
+	@Override
+	public String toString() {
+		return "Festa [aniversariante=" + aniversariante + ", tema=" + tema + ", cliente=" + cliente + ", data=" + data
+				+ ", inicio=" + inicio + ", fim=" + fim + "]";
+	}
+	
 	
 	
 

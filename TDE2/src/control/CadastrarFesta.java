@@ -37,14 +37,15 @@ public class CadastrarFesta extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Festa festa;
-		String aniversariante, cliente, tema; 
+		String aniversariante, cliente, tema;
+		String dataInput;
 		int inicio[] = new int[2];
 		int termino[] = new int[2];
 		
 		aniversariante = request.getParameter("aniversarianteInput");
 		tema = request.getParameter("temaSelect");
 		cliente = request.getParameter("clienteInput");
+		dataInput = request.getParameter("dataInput");
 		String inicioInput = request.getParameter("inicioInput");
 		// vamos pegar a string de inicio e capturar as posições 0 à 2 da string, 
 		// o que nos dará os primeiros dois dígitos antes dos ":"
@@ -65,8 +66,15 @@ public class CadastrarFesta extends HttpServlet {
 		// a validação ocorrendo com javascript ainda no cliente...
 		// mas vamos seguir com uma lógica simples mesmo
 		
-		int inicioMinutos = (inicio[0]*60) + inicio[1];
-		int terminoMinutos = (termino[0]*60) + termino[1];
+		
+		// a validação é feita no cliente...
+		// aqui só recebemos os dados mesmo
+		String inicioString = inicio[0]+":"+ inicio[1];
+		String terminoString = termino[0]+":"+ termino[1];
+		Festa festa = new Festa(aniversariante, tema, cliente, dataInput, inicioString, terminoString);
+		
+		System.out.println(festa);
+		
 	}
 
 }
